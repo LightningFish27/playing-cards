@@ -1,0 +1,471 @@
+\doxysection{Deck\+System\+::Deck Class Reference}
+\hypertarget{classDeckSystem_1_1Deck}{}\label{classDeckSystem_1_1Deck}\index{DeckSystem::Deck@{DeckSystem::Deck}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classDeckSystem_1_1Deck_ad7ca22e4e0bc356d23cf3d96a2da7426}{Deck}} (bool fill\+With\+Standard\+Cards=true)
+\begin{DoxyCompactList}\small\item\em \doxylink{classDeckSystem_1_1Deck}{Deck} constructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classDeckSystem_1_1Deck_a7ca656b20ddb30122d4bf413c44d16b9}{shuffle}} ()
+\begin{DoxyCompactList}\small\item\em Shuffle the deck using a uniform random number generator. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classDeckSystem_1_1Deck_ad68f59e7775f6b77c21eb99d13d7e6f1}{shuffle\+\_\+modulus}} (int num\+Piles)
+\begin{DoxyCompactList}\small\item\em shuffle the deck by placing cards into piles, then restacking them. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classDeckSystem_1_1Deck_a93582f7509ad9695082155f97ca2b22e}{shuffle\+\_\+chunked}} (int chunk\+Size, int chunks)
+\begin{DoxyCompactList}\small\item\em Shuffle the deck by moving chunks of cards. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classDeckSystem_1_1Deck_a010b88cb156f9d2ecfa5d8debf1d6370}{shuffle\+\_\+bridge}} (int cards\+Per\+Side=1)
+\begin{DoxyCompactList}\small\item\em Split deck in half then restack by alternating which side cards are pulled from. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classDeckSystem_1_1Deck_aded40cba326dc6dee175ad757d64d12e}{seed\+\_\+random\+\_\+generator}} (unsigned int seed)
+\begin{DoxyCompactList}\small\item\em Seed the deck\textquotesingle{}s random engine. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structDeckSystem_1_1Card}{Card}} \mbox{\hyperlink{classDeckSystem_1_1Deck_ae07673c9332a57fdb34c17ae8fdb3a3b}{draw\+\_\+top}} ()
+\begin{DoxyCompactList}\small\item\em Draw the top card of the deck. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structDeckSystem_1_1Card}{Card}} \mbox{\hyperlink{classDeckSystem_1_1Deck_ae7bfafde88cf9255624357a3478364e4}{draw\+\_\+bottom}} ()
+\begin{DoxyCompactList}\small\item\em Draw the bottom card of the deck. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structDeckSystem_1_1Card}{Card}} \mbox{\hyperlink{classDeckSystem_1_1Deck_aa47aad1cff7cd5bba37f86edca4be544}{draw\+\_\+random}} (bool include\+Ends=false)
+\begin{DoxyCompactList}\small\item\em Draw a card from anywhere in the deck. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structDeckSystem_1_1Card}{Card}} \mbox{\hyperlink{classDeckSystem_1_1Deck_afc6611ccf58e8a60b64cec855d1226e9}{peek\+\_\+top}} () const
+\begin{DoxyCompactList}\small\item\em Look at the top card of the deck. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structDeckSystem_1_1Card}{Card}} \mbox{\hyperlink{classDeckSystem_1_1Deck_aa9c782fd6969cfabe01fbf754a1851d5}{peek\+\_\+bottom}} () const
+\begin{DoxyCompactList}\small\item\em Look at the bottom card of the deck. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structDeckSystem_1_1Card}{Card}} \mbox{\hyperlink{classDeckSystem_1_1Deck_a75ca5d874843200018c6bcc20bfe2304}{peek\+\_\+random}} (bool include\+Ends=false) const
+\begin{DoxyCompactList}\small\item\em Look at a card from anywhere in the deck without removing it. \end{DoxyCompactList}\item 
+\Hypertarget{classDeckSystem_1_1Deck_a060dc42bac3525cc178dd3e8987b4657}\label{classDeckSystem_1_1Deck_a060dc42bac3525cc178dd3e8987b4657} 
+void {\bfseries place\+\_\+top} (\mbox{\hyperlink{structDeckSystem_1_1Card}{Card}} \&card)
+\item 
+\Hypertarget{classDeckSystem_1_1Deck_ab3613c0f04181eae45bc62a456e6d8a0}\label{classDeckSystem_1_1Deck_ab3613c0f04181eae45bc62a456e6d8a0} 
+void {\bfseries place\+\_\+bottom} (\mbox{\hyperlink{structDeckSystem_1_1Card}{Card}} \&card)
+\item 
+void \mbox{\hyperlink{classDeckSystem_1_1Deck_a37af72f2487aea3bfb0d61d2dac9129b}{place\+\_\+random}} (\mbox{\hyperlink{structDeckSystem_1_1Card}{Card}} \&card, bool include\+Ends=false)
+\begin{DoxyCompactList}\small\item\em Place a card somewhere into the deck. \end{DoxyCompactList}\item 
+\Hypertarget{classDeckSystem_1_1Deck_ac6cd32b22c3348dbe0100169962b243b}\label{classDeckSystem_1_1Deck_ac6cd32b22c3348dbe0100169962b243b} 
+void {\bfseries display\+\_\+deck} ()
+\begin{DoxyCompactList}\small\item\em display the deck line by line from the bottom to the top. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classDeckSystem_1_1Deck_ad7ca22e4e0bc356d23cf3d96a2da7426}{Deck}} (bool fill\+With\+Standard\+Cards=true)
+\begin{DoxyCompactList}\small\item\em \doxylink{classDeckSystem_1_1Deck}{Deck} constructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classDeckSystem_1_1Deck_a7ca656b20ddb30122d4bf413c44d16b9}{shuffle}} ()
+\begin{DoxyCompactList}\small\item\em Shuffle the deck using a uniform random number generator. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classDeckSystem_1_1Deck_ad68f59e7775f6b77c21eb99d13d7e6f1}{shuffle\+\_\+modulus}} (int num\+Piles)
+\begin{DoxyCompactList}\small\item\em shuffle the deck by placing cards into piles, then restacking them. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classDeckSystem_1_1Deck_a93582f7509ad9695082155f97ca2b22e}{shuffle\+\_\+chunked}} (int chunk\+Size, int chunks)
+\begin{DoxyCompactList}\small\item\em Shuffle the deck by moving chunks of cards. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classDeckSystem_1_1Deck_a010b88cb156f9d2ecfa5d8debf1d6370}{shuffle\+\_\+bridge}} (int cards\+Per\+Side=1)
+\begin{DoxyCompactList}\small\item\em Split deck in half then restack by alternating which side cards are pulled from. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classDeckSystem_1_1Deck_aded40cba326dc6dee175ad757d64d12e}{seed\+\_\+random\+\_\+generator}} (unsigned int seed)
+\begin{DoxyCompactList}\small\item\em Seed the deck\textquotesingle{}s random engine. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structDeckSystem_1_1Card}{Card}} \mbox{\hyperlink{classDeckSystem_1_1Deck_ae07673c9332a57fdb34c17ae8fdb3a3b}{draw\+\_\+top}} ()
+\begin{DoxyCompactList}\small\item\em Draw the top card of the deck. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structDeckSystem_1_1Card}{Card}} \mbox{\hyperlink{classDeckSystem_1_1Deck_ae7bfafde88cf9255624357a3478364e4}{draw\+\_\+bottom}} ()
+\begin{DoxyCompactList}\small\item\em Draw the bottom card of the deck. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structDeckSystem_1_1Card}{Card}} \mbox{\hyperlink{classDeckSystem_1_1Deck_aa47aad1cff7cd5bba37f86edca4be544}{draw\+\_\+random}} (bool include\+Ends=false)
+\begin{DoxyCompactList}\small\item\em Draw a card from anywhere in the deck. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structDeckSystem_1_1Card}{Card}} \mbox{\hyperlink{classDeckSystem_1_1Deck_afc6611ccf58e8a60b64cec855d1226e9}{peek\+\_\+top}} () const
+\begin{DoxyCompactList}\small\item\em Look at the top card of the deck. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structDeckSystem_1_1Card}{Card}} \mbox{\hyperlink{classDeckSystem_1_1Deck_aa9c782fd6969cfabe01fbf754a1851d5}{peek\+\_\+bottom}} () const
+\begin{DoxyCompactList}\small\item\em Look at the bottom card of the deck. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structDeckSystem_1_1Card}{Card}} \mbox{\hyperlink{classDeckSystem_1_1Deck_a75ca5d874843200018c6bcc20bfe2304}{peek\+\_\+random}} (bool include\+Ends=false) const
+\begin{DoxyCompactList}\small\item\em Look at a card from anywhere in the deck without removing it. \end{DoxyCompactList}\item 
+\Hypertarget{classDeckSystem_1_1Deck_a060dc42bac3525cc178dd3e8987b4657}\label{classDeckSystem_1_1Deck_a060dc42bac3525cc178dd3e8987b4657} 
+void {\bfseries place\+\_\+top} (\mbox{\hyperlink{structDeckSystem_1_1Card}{Card}} \&card)
+\item 
+\Hypertarget{classDeckSystem_1_1Deck_ab3613c0f04181eae45bc62a456e6d8a0}\label{classDeckSystem_1_1Deck_ab3613c0f04181eae45bc62a456e6d8a0} 
+void {\bfseries place\+\_\+bottom} (\mbox{\hyperlink{structDeckSystem_1_1Card}{Card}} \&card)
+\item 
+void \mbox{\hyperlink{classDeckSystem_1_1Deck_a37af72f2487aea3bfb0d61d2dac9129b}{place\+\_\+random}} (\mbox{\hyperlink{structDeckSystem_1_1Card}{Card}} \&card, bool include\+Ends=false)
+\begin{DoxyCompactList}\small\item\em Place a card somewhere into the deck. \end{DoxyCompactList}\item 
+\Hypertarget{classDeckSystem_1_1Deck_ac6cd32b22c3348dbe0100169962b243b}\label{classDeckSystem_1_1Deck_ac6cd32b22c3348dbe0100169962b243b} 
+void {\bfseries display\+\_\+deck} ()
+\begin{DoxyCompactList}\small\item\em display the deck line by line from the bottom to the top. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classDeckSystem_1_1Deck_ad7ca22e4e0bc356d23cf3d96a2da7426}\label{classDeckSystem_1_1Deck_ad7ca22e4e0bc356d23cf3d96a2da7426} 
+\index{DeckSystem::Deck@{DeckSystem::Deck}!Deck@{Deck}}
+\index{Deck@{Deck}!DeckSystem::Deck@{DeckSystem::Deck}}
+\doxysubsubsection{\texorpdfstring{Deck()}{Deck()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Deck\+System\+::\+Deck\+::\+Deck (\begin{DoxyParamCaption}\item[{bool}]{fill\+With\+Standard\+Cards = {\ttfamily true} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxylink{classDeckSystem_1_1Deck}{Deck} constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em fill\+With\+Standard\+Cards} & Setting this true will initialize the deck with the 52 standard cards. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classDeckSystem_1_1Deck_ad7ca22e4e0bc356d23cf3d96a2da7426}\label{classDeckSystem_1_1Deck_ad7ca22e4e0bc356d23cf3d96a2da7426} 
+\index{DeckSystem::Deck@{DeckSystem::Deck}!Deck@{Deck}}
+\index{Deck@{Deck}!DeckSystem::Deck@{DeckSystem::Deck}}
+\doxysubsubsection{\texorpdfstring{Deck()}{Deck()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Deck\+System\+::\+Deck\+::\+Deck (\begin{DoxyParamCaption}\item[{bool}]{fill\+With\+Standard\+Cards = {\ttfamily true} }\end{DoxyParamCaption})}
+
+
+
+\doxylink{classDeckSystem_1_1Deck}{Deck} constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em fill\+With\+Standard\+Cards} & Setting this true will initialize the deck with the 52 standard cards. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classDeckSystem_1_1Deck_ae7bfafde88cf9255624357a3478364e4}\label{classDeckSystem_1_1Deck_ae7bfafde88cf9255624357a3478364e4} 
+\index{DeckSystem::Deck@{DeckSystem::Deck}!draw\_bottom@{draw\_bottom}}
+\index{draw\_bottom@{draw\_bottom}!DeckSystem::Deck@{DeckSystem::Deck}}
+\doxysubsubsection{\texorpdfstring{draw\_bottom()}{draw\_bottom()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structDeckSystem_1_1Card}{Card}} Deck\+System\+::\+Deck\+::draw\+\_\+bottom (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Draw the bottom card of the deck. 
+
+\begin{DoxyReturn}{Returns}
+Returns the bottom card off the deck. 
+\end{DoxyReturn}
+\Hypertarget{classDeckSystem_1_1Deck_ae7bfafde88cf9255624357a3478364e4}\label{classDeckSystem_1_1Deck_ae7bfafde88cf9255624357a3478364e4} 
+\index{DeckSystem::Deck@{DeckSystem::Deck}!draw\_bottom@{draw\_bottom}}
+\index{draw\_bottom@{draw\_bottom}!DeckSystem::Deck@{DeckSystem::Deck}}
+\doxysubsubsection{\texorpdfstring{draw\_bottom()}{draw\_bottom()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structDeckSystem_1_1Card}{Card}} Deck\+System\+::\+Deck\+::draw\+\_\+bottom (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Draw the bottom card of the deck. 
+
+\begin{DoxyReturn}{Returns}
+Returns the bottom card off the deck. 
+\end{DoxyReturn}
+\Hypertarget{classDeckSystem_1_1Deck_aa47aad1cff7cd5bba37f86edca4be544}\label{classDeckSystem_1_1Deck_aa47aad1cff7cd5bba37f86edca4be544} 
+\index{DeckSystem::Deck@{DeckSystem::Deck}!draw\_random@{draw\_random}}
+\index{draw\_random@{draw\_random}!DeckSystem::Deck@{DeckSystem::Deck}}
+\doxysubsubsection{\texorpdfstring{draw\_random()}{draw\_random()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structDeckSystem_1_1Card}{Card}} Deck\+System\+::\+Deck\+::draw\+\_\+random (\begin{DoxyParamCaption}\item[{bool}]{include\+Ends = {\ttfamily false} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Draw a card from anywhere in the deck. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em include\+Ends} & Whether or not to be able to draw the top or bottom card. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns the card drawn. 
+\end{DoxyReturn}
+\Hypertarget{classDeckSystem_1_1Deck_aa47aad1cff7cd5bba37f86edca4be544}\label{classDeckSystem_1_1Deck_aa47aad1cff7cd5bba37f86edca4be544} 
+\index{DeckSystem::Deck@{DeckSystem::Deck}!draw\_random@{draw\_random}}
+\index{draw\_random@{draw\_random}!DeckSystem::Deck@{DeckSystem::Deck}}
+\doxysubsubsection{\texorpdfstring{draw\_random()}{draw\_random()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structDeckSystem_1_1Card}{Card}} Deck\+System\+::\+Deck\+::draw\+\_\+random (\begin{DoxyParamCaption}\item[{bool}]{include\+Ends = {\ttfamily false} }\end{DoxyParamCaption})}
+
+
+
+Draw a card from anywhere in the deck. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em include\+Ends} & Whether or not to be able to draw the top or bottom card. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns the card drawn. 
+\end{DoxyReturn}
+\Hypertarget{classDeckSystem_1_1Deck_ae07673c9332a57fdb34c17ae8fdb3a3b}\label{classDeckSystem_1_1Deck_ae07673c9332a57fdb34c17ae8fdb3a3b} 
+\index{DeckSystem::Deck@{DeckSystem::Deck}!draw\_top@{draw\_top}}
+\index{draw\_top@{draw\_top}!DeckSystem::Deck@{DeckSystem::Deck}}
+\doxysubsubsection{\texorpdfstring{draw\_top()}{draw\_top()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structDeckSystem_1_1Card}{Card}} Deck\+System\+::\+Deck\+::draw\+\_\+top (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Draw the top card of the deck. 
+
+\begin{DoxyReturn}{Returns}
+Returns the top card off the deck. 
+\end{DoxyReturn}
+\Hypertarget{classDeckSystem_1_1Deck_ae07673c9332a57fdb34c17ae8fdb3a3b}\label{classDeckSystem_1_1Deck_ae07673c9332a57fdb34c17ae8fdb3a3b} 
+\index{DeckSystem::Deck@{DeckSystem::Deck}!draw\_top@{draw\_top}}
+\index{draw\_top@{draw\_top}!DeckSystem::Deck@{DeckSystem::Deck}}
+\doxysubsubsection{\texorpdfstring{draw\_top()}{draw\_top()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structDeckSystem_1_1Card}{Card}} Deck\+System\+::\+Deck\+::draw\+\_\+top (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Draw the top card of the deck. 
+
+\begin{DoxyReturn}{Returns}
+Returns the top card off the deck. 
+\end{DoxyReturn}
+\Hypertarget{classDeckSystem_1_1Deck_aa9c782fd6969cfabe01fbf754a1851d5}\label{classDeckSystem_1_1Deck_aa9c782fd6969cfabe01fbf754a1851d5} 
+\index{DeckSystem::Deck@{DeckSystem::Deck}!peek\_bottom@{peek\_bottom}}
+\index{peek\_bottom@{peek\_bottom}!DeckSystem::Deck@{DeckSystem::Deck}}
+\doxysubsubsection{\texorpdfstring{peek\_bottom()}{peek\_bottom()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structDeckSystem_1_1Card}{Card}} Deck\+System\+::\+Deck\+::peek\+\_\+bottom (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Look at the bottom card of the deck. 
+
+\begin{DoxyReturn}{Returns}
+Returns the bottom card of the deck. The card remains in the deck. 
+\end{DoxyReturn}
+\Hypertarget{classDeckSystem_1_1Deck_aa9c782fd6969cfabe01fbf754a1851d5}\label{classDeckSystem_1_1Deck_aa9c782fd6969cfabe01fbf754a1851d5} 
+\index{DeckSystem::Deck@{DeckSystem::Deck}!peek\_bottom@{peek\_bottom}}
+\index{peek\_bottom@{peek\_bottom}!DeckSystem::Deck@{DeckSystem::Deck}}
+\doxysubsubsection{\texorpdfstring{peek\_bottom()}{peek\_bottom()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structDeckSystem_1_1Card}{Card}} Deck\+System\+::\+Deck\+::peek\+\_\+bottom (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Look at the bottom card of the deck. 
+
+\begin{DoxyReturn}{Returns}
+Returns the bottom card of the deck. The card remains in the deck. 
+\end{DoxyReturn}
+\Hypertarget{classDeckSystem_1_1Deck_a75ca5d874843200018c6bcc20bfe2304}\label{classDeckSystem_1_1Deck_a75ca5d874843200018c6bcc20bfe2304} 
+\index{DeckSystem::Deck@{DeckSystem::Deck}!peek\_random@{peek\_random}}
+\index{peek\_random@{peek\_random}!DeckSystem::Deck@{DeckSystem::Deck}}
+\doxysubsubsection{\texorpdfstring{peek\_random()}{peek\_random()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structDeckSystem_1_1Card}{Card}} Deck\+System\+::\+Deck\+::peek\+\_\+random (\begin{DoxyParamCaption}\item[{bool}]{include\+Ends = {\ttfamily false} }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Look at a card from anywhere in the deck without removing it. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em include\+Ends} & Whether or not to be able to peek the top or bottom card. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns the card peeked. The card remains in the deck. 
+\end{DoxyReturn}
+\Hypertarget{classDeckSystem_1_1Deck_a75ca5d874843200018c6bcc20bfe2304}\label{classDeckSystem_1_1Deck_a75ca5d874843200018c6bcc20bfe2304} 
+\index{DeckSystem::Deck@{DeckSystem::Deck}!peek\_random@{peek\_random}}
+\index{peek\_random@{peek\_random}!DeckSystem::Deck@{DeckSystem::Deck}}
+\doxysubsubsection{\texorpdfstring{peek\_random()}{peek\_random()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structDeckSystem_1_1Card}{Card}} Deck\+System\+::\+Deck\+::peek\+\_\+random (\begin{DoxyParamCaption}\item[{bool}]{include\+Ends = {\ttfamily false} }\end{DoxyParamCaption}) const}
+
+
+
+Look at a card from anywhere in the deck without removing it. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em include\+Ends} & Whether or not to be able to peek the top or bottom card. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns the card peeked. The card remains in the deck. 
+\end{DoxyReturn}
+\Hypertarget{classDeckSystem_1_1Deck_afc6611ccf58e8a60b64cec855d1226e9}\label{classDeckSystem_1_1Deck_afc6611ccf58e8a60b64cec855d1226e9} 
+\index{DeckSystem::Deck@{DeckSystem::Deck}!peek\_top@{peek\_top}}
+\index{peek\_top@{peek\_top}!DeckSystem::Deck@{DeckSystem::Deck}}
+\doxysubsubsection{\texorpdfstring{peek\_top()}{peek\_top()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structDeckSystem_1_1Card}{Card}} Deck\+System\+::\+Deck\+::peek\+\_\+top (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Look at the top card of the deck. 
+
+\begin{DoxyReturn}{Returns}
+Returns the top card of the deck. The card remains in the deck. 
+\end{DoxyReturn}
+\Hypertarget{classDeckSystem_1_1Deck_afc6611ccf58e8a60b64cec855d1226e9}\label{classDeckSystem_1_1Deck_afc6611ccf58e8a60b64cec855d1226e9} 
+\index{DeckSystem::Deck@{DeckSystem::Deck}!peek\_top@{peek\_top}}
+\index{peek\_top@{peek\_top}!DeckSystem::Deck@{DeckSystem::Deck}}
+\doxysubsubsection{\texorpdfstring{peek\_top()}{peek\_top()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structDeckSystem_1_1Card}{Card}} Deck\+System\+::\+Deck\+::peek\+\_\+top (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Look at the top card of the deck. 
+
+\begin{DoxyReturn}{Returns}
+Returns the top card of the deck. The card remains in the deck. 
+\end{DoxyReturn}
+\Hypertarget{classDeckSystem_1_1Deck_a37af72f2487aea3bfb0d61d2dac9129b}\label{classDeckSystem_1_1Deck_a37af72f2487aea3bfb0d61d2dac9129b} 
+\index{DeckSystem::Deck@{DeckSystem::Deck}!place\_random@{place\_random}}
+\index{place\_random@{place\_random}!DeckSystem::Deck@{DeckSystem::Deck}}
+\doxysubsubsection{\texorpdfstring{place\_random()}{place\_random()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Deck\+System\+::\+Deck\+::place\+\_\+random (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structDeckSystem_1_1Card}{Card}} \&}]{card,  }\item[{bool}]{include\+Ends = {\ttfamily false} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Place a card somewhere into the deck. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em include\+Ends} & Whether or not the card can go on the top or bottom. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classDeckSystem_1_1Deck_a37af72f2487aea3bfb0d61d2dac9129b}\label{classDeckSystem_1_1Deck_a37af72f2487aea3bfb0d61d2dac9129b} 
+\index{DeckSystem::Deck@{DeckSystem::Deck}!place\_random@{place\_random}}
+\index{place\_random@{place\_random}!DeckSystem::Deck@{DeckSystem::Deck}}
+\doxysubsubsection{\texorpdfstring{place\_random()}{place\_random()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Deck\+System\+::\+Deck\+::place\+\_\+random (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structDeckSystem_1_1Card}{Card}} \&}]{card,  }\item[{bool}]{include\+Ends = {\ttfamily false} }\end{DoxyParamCaption})}
+
+
+
+Place a card somewhere into the deck. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em include\+Ends} & Whether or not the card can go on the top or bottom. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classDeckSystem_1_1Deck_aded40cba326dc6dee175ad757d64d12e}\label{classDeckSystem_1_1Deck_aded40cba326dc6dee175ad757d64d12e} 
+\index{DeckSystem::Deck@{DeckSystem::Deck}!seed\_random\_generator@{seed\_random\_generator}}
+\index{seed\_random\_generator@{seed\_random\_generator}!DeckSystem::Deck@{DeckSystem::Deck}}
+\doxysubsubsection{\texorpdfstring{seed\_random\_generator()}{seed\_random\_generator()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Deck\+System\+::\+Deck\+::seed\+\_\+random\+\_\+generator (\begin{DoxyParamCaption}\item[{unsigned int}]{seed }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Seed the deck\textquotesingle{}s random engine. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em seed} & The new seed to use. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classDeckSystem_1_1Deck_aded40cba326dc6dee175ad757d64d12e}\label{classDeckSystem_1_1Deck_aded40cba326dc6dee175ad757d64d12e} 
+\index{DeckSystem::Deck@{DeckSystem::Deck}!seed\_random\_generator@{seed\_random\_generator}}
+\index{seed\_random\_generator@{seed\_random\_generator}!DeckSystem::Deck@{DeckSystem::Deck}}
+\doxysubsubsection{\texorpdfstring{seed\_random\_generator()}{seed\_random\_generator()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Deck\+System\+::\+Deck\+::seed\+\_\+random\+\_\+generator (\begin{DoxyParamCaption}\item[{unsigned int}]{seed }\end{DoxyParamCaption})}
+
+
+
+Seed the deck\textquotesingle{}s random engine. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em seed} & The new seed to use. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classDeckSystem_1_1Deck_a7ca656b20ddb30122d4bf413c44d16b9}\label{classDeckSystem_1_1Deck_a7ca656b20ddb30122d4bf413c44d16b9} 
+\index{DeckSystem::Deck@{DeckSystem::Deck}!shuffle@{shuffle}}
+\index{shuffle@{shuffle}!DeckSystem::Deck@{DeckSystem::Deck}}
+\doxysubsubsection{\texorpdfstring{shuffle()}{shuffle()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Deck\+System\+::\+Deck\+::shuffle (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Shuffle the deck using a uniform random number generator. 
+
+This shuffle method is the truest shuffle provided, and should be used in most cases. \Hypertarget{classDeckSystem_1_1Deck_a7ca656b20ddb30122d4bf413c44d16b9}\label{classDeckSystem_1_1Deck_a7ca656b20ddb30122d4bf413c44d16b9} 
+\index{DeckSystem::Deck@{DeckSystem::Deck}!shuffle@{shuffle}}
+\index{shuffle@{shuffle}!DeckSystem::Deck@{DeckSystem::Deck}}
+\doxysubsubsection{\texorpdfstring{shuffle()}{shuffle()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Deck\+System\+::\+Deck\+::shuffle (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Shuffle the deck using a uniform random number generator. 
+
+This shuffle method is the truest shuffle provided, and should be used in most cases. \Hypertarget{classDeckSystem_1_1Deck_a010b88cb156f9d2ecfa5d8debf1d6370}\label{classDeckSystem_1_1Deck_a010b88cb156f9d2ecfa5d8debf1d6370} 
+\index{DeckSystem::Deck@{DeckSystem::Deck}!shuffle\_bridge@{shuffle\_bridge}}
+\index{shuffle\_bridge@{shuffle\_bridge}!DeckSystem::Deck@{DeckSystem::Deck}}
+\doxysubsubsection{\texorpdfstring{shuffle\_bridge()}{shuffle\_bridge()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Deck\+System\+::\+Deck\+::shuffle\+\_\+bridge (\begin{DoxyParamCaption}\item[{int}]{cards\+Per\+Side = {\ttfamily 1} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Split deck in half then restack by alternating which side cards are pulled from. 
+
+The most typical shuffle, performed by bridging cards. Setting cards\+Per\+Size = 1 is a perfect 1\+:1 bridge, but larger numbers can be used to mimick worse bridging. This is a deterministic method, and technically not random. Works better for games with more than 2 players and a changing turn order. 
+\begin{DoxyParams}{Parameters}
+{\em cards\+Per\+Size} & The number of cards to take from one half before taking from the other half. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classDeckSystem_1_1Deck_a010b88cb156f9d2ecfa5d8debf1d6370}\label{classDeckSystem_1_1Deck_a010b88cb156f9d2ecfa5d8debf1d6370} 
+\index{DeckSystem::Deck@{DeckSystem::Deck}!shuffle\_bridge@{shuffle\_bridge}}
+\index{shuffle\_bridge@{shuffle\_bridge}!DeckSystem::Deck@{DeckSystem::Deck}}
+\doxysubsubsection{\texorpdfstring{shuffle\_bridge()}{shuffle\_bridge()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Deck\+System\+::\+Deck\+::shuffle\+\_\+bridge (\begin{DoxyParamCaption}\item[{int}]{cards\+Per\+Side = {\ttfamily 1} }\end{DoxyParamCaption})}
+
+
+
+Split deck in half then restack by alternating which side cards are pulled from. 
+
+The most typical shuffle, performed by bridging cards. Setting cards\+Per\+Size = 1 is a perfect 1\+:1 bridge, but larger numbers can be used to mimick worse bridging. This is a deterministic method, and technically not random. Works better for games with more than 2 players and a changing turn order. 
+\begin{DoxyParams}{Parameters}
+{\em cards\+Per\+Size} & The number of cards to take from one half before taking from the other half. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classDeckSystem_1_1Deck_a93582f7509ad9695082155f97ca2b22e}\label{classDeckSystem_1_1Deck_a93582f7509ad9695082155f97ca2b22e} 
+\index{DeckSystem::Deck@{DeckSystem::Deck}!shuffle\_chunked@{shuffle\_chunked}}
+\index{shuffle\_chunked@{shuffle\_chunked}!DeckSystem::Deck@{DeckSystem::Deck}}
+\doxysubsubsection{\texorpdfstring{shuffle\_chunked()}{shuffle\_chunked()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Deck\+System\+::\+Deck\+::shuffle\+\_\+chunked (\begin{DoxyParamCaption}\item[{int}]{chunk\+Size,  }\item[{int}]{chunks }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Shuffle the deck by moving chunks of cards. 
+
+Grab a handful of cards, then insert them into a new index. This is the worst way to shuffle the deck, and should probably never be used. But you can.
+
+
+\begin{DoxyParams}{Parameters}
+{\em chunk\+Size} & How many cards to grab in a chunk. \\
+\hline
+{\em chunks} & How many times to grab and move a chunk. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classDeckSystem_1_1Deck_a93582f7509ad9695082155f97ca2b22e}\label{classDeckSystem_1_1Deck_a93582f7509ad9695082155f97ca2b22e} 
+\index{DeckSystem::Deck@{DeckSystem::Deck}!shuffle\_chunked@{shuffle\_chunked}}
+\index{shuffle\_chunked@{shuffle\_chunked}!DeckSystem::Deck@{DeckSystem::Deck}}
+\doxysubsubsection{\texorpdfstring{shuffle\_chunked()}{shuffle\_chunked()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Deck\+System\+::\+Deck\+::shuffle\+\_\+chunked (\begin{DoxyParamCaption}\item[{int}]{chunk\+Size,  }\item[{int}]{chunks }\end{DoxyParamCaption})}
+
+
+
+Shuffle the deck by moving chunks of cards. 
+
+Grab a handful of cards, then insert them into a new index. This is the worst way to shuffle the deck, and should probably never be used. But you can.
+
+
+\begin{DoxyParams}{Parameters}
+{\em chunk\+Size} & How many cards to grab in a chunk. \\
+\hline
+{\em chunks} & How many times to grab and move a chunk. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classDeckSystem_1_1Deck_ad68f59e7775f6b77c21eb99d13d7e6f1}\label{classDeckSystem_1_1Deck_ad68f59e7775f6b77c21eb99d13d7e6f1} 
+\index{DeckSystem::Deck@{DeckSystem::Deck}!shuffle\_modulus@{shuffle\_modulus}}
+\index{shuffle\_modulus@{shuffle\_modulus}!DeckSystem::Deck@{DeckSystem::Deck}}
+\doxysubsubsection{\texorpdfstring{shuffle\_modulus()}{shuffle\_modulus()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Deck\+System\+::\+Deck\+::shuffle\+\_\+modulus (\begin{DoxyParamCaption}\item[{int}]{num\+Piles }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+shuffle the deck by placing cards into piles, then restacking them. 
+
+This shuffle method is technically completely deterministic, but will seem random to most players. Its randomness improves as num\+Piles increases. 
+\begin{DoxyParams}{Parameters}
+{\em num\+Piles} & The number of piles to shuffle cards into before restacking them. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classDeckSystem_1_1Deck_ad68f59e7775f6b77c21eb99d13d7e6f1}\label{classDeckSystem_1_1Deck_ad68f59e7775f6b77c21eb99d13d7e6f1} 
+\index{DeckSystem::Deck@{DeckSystem::Deck}!shuffle\_modulus@{shuffle\_modulus}}
+\index{shuffle\_modulus@{shuffle\_modulus}!DeckSystem::Deck@{DeckSystem::Deck}}
+\doxysubsubsection{\texorpdfstring{shuffle\_modulus()}{shuffle\_modulus()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Deck\+System\+::\+Deck\+::shuffle\+\_\+modulus (\begin{DoxyParamCaption}\item[{int}]{num\+Piles }\end{DoxyParamCaption})}
+
+
+
+shuffle the deck by placing cards into piles, then restacking them. 
+
+This shuffle method is technically completely deterministic, but will seem random to most players. Its randomness improves as num\+Piles increases. 
+\begin{DoxyParams}{Parameters}
+{\em num\+Piles} & The number of piles to shuffle cards into before restacking them. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Card.\+cpp\item 
+Card.\+h\end{DoxyCompactItemize}

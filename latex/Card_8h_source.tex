@@ -1,0 +1,75 @@
+\doxysection{Card.\+h}
+\hypertarget{Card_8h_source}{}\label{Card_8h_source}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{//\ Card.h}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#ifndef\ MYHEADER\_H}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#define\ MYHEADER\_H}}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ <unordered\_map>}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ <deque>}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ <queue>}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ <algorithm>}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ <random>}}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00014\ \textcolor{keyword}{namespace\ }DeckSystem\{}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00016\ \textcolor{keyword}{struct\ }Card}
+\DoxyCodeLine{00017\ \{}
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{keywordtype}{int}\ value;}
+\DoxyCodeLine{00019\ \ \ \ \ \textcolor{keywordtype}{int}\ suit;}
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{comment}{//\ Conversion\ member\ variables\ that\ are\ static\ and\ shared\ across\ cards.}}
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keyword}{static}\ std::unordered\_map<int,\ std::string>\ valueDict;}
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keyword}{static}\ std::unordered\_map<int,\ std::string>\ suitDict;}
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00031\ \ \ \ \ \mbox{\hyperlink{structDeckSystem_1_1Card_a1629b8e834ebc8ebcf7eb92391ef6cb3}{Card}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ v,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ s);}
+\DoxyCodeLine{00032\ \ \ \ \ }
+\DoxyCodeLine{00040\ \ \ \ \ \textcolor{keyword}{friend}\ std::ostream\ \&\mbox{\hyperlink{structDeckSystem_1_1Card_a3bbd82d9047456c6ecbe51a56ca7a584}{operator<<}}(std::ostream\ \&os,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{structDeckSystem_1_1Card}{Card}}\ \&card);}
+\DoxyCodeLine{00041\ \};}
+\DoxyCodeLine{00042\ }
+\DoxyCodeLine{00043\ \textcolor{comment}{//\ Maps\ to\ convert\ card\ values\ into\ strings}}
+\DoxyCodeLine{00044\ std::unordered\_map<int,\ std::string>\ Card::valueDict;}
+\DoxyCodeLine{00045\ std::unordered\_map<int,\ std::string>\ Card::suitDict;}
+\DoxyCodeLine{00046\ }
+\DoxyCodeLine{00047\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classDeckSystem_1_1Deck}{Deck}}}
+\DoxyCodeLine{00048\ \{}
+\DoxyCodeLine{00049\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00050\ \ \ \ \ std::vector<Card>\ cards;}
+\DoxyCodeLine{00051\ \ \ \ \ std::mt19937\ randomEngine;}
+\DoxyCodeLine{00052\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00058\ \ \ \ \ \mbox{\hyperlink{classDeckSystem_1_1Deck_ad7ca22e4e0bc356d23cf3d96a2da7426}{Deck}}(\textcolor{keywordtype}{bool}\ fillWithStandardCards\ =\ \textcolor{keyword}{true});}
+\DoxyCodeLine{00059\ }
+\DoxyCodeLine{00066\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classDeckSystem_1_1Deck_a7ca656b20ddb30122d4bf413c44d16b9}{shuffle}}();}
+\DoxyCodeLine{00074\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classDeckSystem_1_1Deck_ad68f59e7775f6b77c21eb99d13d7e6f1}{shuffle\_modulus}}(\textcolor{keywordtype}{int}\ numPiles);}
+\DoxyCodeLine{00075\ }
+\DoxyCodeLine{00085\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classDeckSystem_1_1Deck_a93582f7509ad9695082155f97ca2b22e}{shuffle\_chunked}}(\textcolor{keywordtype}{int}\ chunkSize,\ \textcolor{keywordtype}{int}\ chunks);}
+\DoxyCodeLine{00086\ }
+\DoxyCodeLine{00096\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classDeckSystem_1_1Deck_a010b88cb156f9d2ecfa5d8debf1d6370}{shuffle\_bridge}}(\textcolor{keywordtype}{int}\ cardsPerSide\ =\ 1);}
+\DoxyCodeLine{00102\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classDeckSystem_1_1Deck_aded40cba326dc6dee175ad757d64d12e}{seed\_random\_generator}}(\textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{int}\ seed);}
+\DoxyCodeLine{00103\ }
+\DoxyCodeLine{00109\ \ \ \ \ \mbox{\hyperlink{structDeckSystem_1_1Card}{Card}}\ \mbox{\hyperlink{classDeckSystem_1_1Deck_ae07673c9332a57fdb34c17ae8fdb3a3b}{draw\_top}}();}
+\DoxyCodeLine{00115\ \ \ \ \ \mbox{\hyperlink{structDeckSystem_1_1Card}{Card}}\ \mbox{\hyperlink{classDeckSystem_1_1Deck_ae7bfafde88cf9255624357a3478364e4}{draw\_bottom}}();}
+\DoxyCodeLine{00123\ \ \ \ \ \mbox{\hyperlink{structDeckSystem_1_1Card}{Card}}\ \mbox{\hyperlink{classDeckSystem_1_1Deck_aa47aad1cff7cd5bba37f86edca4be544}{draw\_random}}(\textcolor{keywordtype}{bool}\ includeEnds\ =\ \textcolor{keyword}{false});}
+\DoxyCodeLine{00124\ }
+\DoxyCodeLine{00130\ \ \ \ \ \mbox{\hyperlink{structDeckSystem_1_1Card}{Card}}\ \mbox{\hyperlink{classDeckSystem_1_1Deck_afc6611ccf58e8a60b64cec855d1226e9}{peek\_top}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00136\ \ \ \ \ \mbox{\hyperlink{structDeckSystem_1_1Card}{Card}}\ \mbox{\hyperlink{classDeckSystem_1_1Deck_aa9c782fd6969cfabe01fbf754a1851d5}{peek\_bottom}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00144\ \ \ \ \ \mbox{\hyperlink{structDeckSystem_1_1Card}{Card}}\ \mbox{\hyperlink{classDeckSystem_1_1Deck_a75ca5d874843200018c6bcc20bfe2304}{peek\_random}}(\textcolor{keywordtype}{bool}\ includeEnds\ =\ \textcolor{keyword}{false})\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00145\ }
+\DoxyCodeLine{00146\ \ \ \ \ \textcolor{comment}{/*\ Add\ a\ card\ to\ the\ top\ of\ the\ deck\ */}}
+\DoxyCodeLine{00147\ \ \ \ \ \textcolor{keywordtype}{void}\ place\_top(\mbox{\hyperlink{structDeckSystem_1_1Card}{Card}}\ \&card);}
+\DoxyCodeLine{00148\ \ \ \ \ \textcolor{comment}{/*\ Add\ a\ card\ to\ the\ bottom\ of\ the\ deck.*/}}
+\DoxyCodeLine{00149\ \ \ \ \ \textcolor{keywordtype}{void}\ place\_bottom(\mbox{\hyperlink{structDeckSystem_1_1Card}{Card}}\ \&card);}
+\DoxyCodeLine{00156\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classDeckSystem_1_1Deck_a37af72f2487aea3bfb0d61d2dac9129b}{place\_random}}(\mbox{\hyperlink{structDeckSystem_1_1Card}{Card}}\ \&card,\ \textcolor{keywordtype}{bool}\ includeEnds\ =\ \textcolor{keyword}{false});}
+\DoxyCodeLine{00157\ }
+\DoxyCodeLine{00161\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classDeckSystem_1_1Deck_ac6cd32b22c3348dbe0100169962b243b}{display\_deck}}();}
+\DoxyCodeLine{00162\ \};}
+\DoxyCodeLine{00163\ }
+\DoxyCodeLine{00164\ \}\ \textcolor{comment}{//\ end\ namespace\ DeckSystem}}
+\DoxyCodeLine{00165\ }
+\DoxyCodeLine{00166\ }
+\DoxyCodeLine{00167\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}
